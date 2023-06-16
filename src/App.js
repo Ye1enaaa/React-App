@@ -5,6 +5,7 @@ import Dashboard from './dashboard/dashboard.jsx';
 import Register from './auth/register';
 import Login from './auth/login';
 import UserListPreview from './user_list/userlist';
+import Notifications from './dashboard/notifications';
 function App() {
   return (
     <Routes>
@@ -12,6 +13,7 @@ function App() {
       <Route path="/login" exact element={<Login/>}></Route>
       <Route path="/dashboard" exact element={<Dashboard/>}>
         <Route path="users" exact element={<UserListPreview/>}></Route>
+        <Route path="users" exact element={<Notifications/>}></Route>
       </Route>
     </Routes>
   );
